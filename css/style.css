@@ -90,7 +90,7 @@ h2 {
 
 /* ================= CARD ================= */
 .card {
-    background: #fff;
+    background: #ffffff;
     padding: 32px;
     border-radius: 18px;
     text-align: center;
@@ -103,10 +103,10 @@ h2 {
 }
 
 .price-card {
-    background: #fff;
+    background: #faf4a8;
     padding: 42px 36px;
-    border-radius: 22px;
-    border: 2px solid #e6e6e6;
+    border-radius: 50px;
+    border: 2px solid #131212;
     text-align: center;
     max-width: 420px;
     width: 100%;
@@ -288,6 +288,177 @@ footer {
     }
 
     .contact-btn i {
+        font-size: 18px;
+    }
+}
+/* ================= CV vs PORTFOLIO – TYPO & COLOR ================= */
+
+.compare h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #222;
+    letter-spacing: -0.5px;
+}
+
+/* Box */
+.compare-col {
+    background: #f7f9fc;
+    border: 2px solid #e6eaf0;
+}
+
+/* Title CV / Portfolio */
+.compare-col h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* List text */
+.compare-col li {
+    font-size: 22px;
+    color: #555;
+}
+
+/* Portfolio nổi bật */
+.compare-col.highlight {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    border-color: transparent;
+}
+
+.compare-col.highlight h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.compare-col.highlight li {
+    font-size: 23px;
+    color: #ffffff;
+}
+
+/* Bottom note */
+.compare-note {
+    font-size: 26px;
+    font-weight: 700;
+    color: #222;
+    margin-top: 50px;
+}
+
+/* Highlight chữ quan trọng */
+.compare-note strong {
+    color: #4facfe;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 991px) {
+
+    .compare h2 {
+        font-size: 30px;
+    }
+
+    .compare-col h3 {
+        font-size: 22px;
+    }
+
+    .compare-col li {
+        font-size: 16px;
+    }
+
+    .compare-col.highlight h3 {
+        font-size: 24px;
+    }
+
+    .compare-note {
+        font-size: 18px;
+    }
+}
+/* ================= CV vs PORTFOLIO ================= */
+.compare {
+        background: linear-gradient(
+        100deg,
+        rgba(54, 153, 240, 0.08),
+        rgba(11, 77, 57, 0.12)
+    );
+}
+
+.compare h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.compare-table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.compare-col {
+    background: #f7f9fc;
+    padding: 40px 36px;
+    border-radius: 24px;
+    text-align: left;
+}
+
+.compare-col h3 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.compare-col ul {
+    list-style: none;
+}
+
+.compare-col li {
+    font-size: 18px;
+    margin-bottom: 14px;
+    line-height: 1.6;
+}
+
+/* Portfolio nổi bật hơn */
+.compare-col.highlight {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #fff;
+}
+
+.compare-col.highlight h3 {
+    color: #fff;
+}
+
+.compare-col.highlight li {
+    color: #fff;
+}
+
+/* Note */
+.compare-note {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 991px) {
+
+    .compare-table {
+        grid-template-columns: 1fr;
+    }
+
+    .compare h2 {
+        font-size: 28px;
+    }
+
+    .compare-col h3 {
+        font-size: 22px;
+    }
+
+    .compare-col li {
+        font-size: 16px;
+    }
+
+    .compare-note {
         font-size: 18px;
     }
 }
