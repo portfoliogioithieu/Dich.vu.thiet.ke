@@ -1,4 +1,4 @@
-/* ================= RESET ================= */
+/* ========== RESET & BASE ========== */
 * {
     margin: 0;
     padding: 0;
@@ -11,10 +11,9 @@ body {
     color: #333;
     line-height: 1.6;
 }
-
-/* ================= COMMON ================= */
+/* ========== COMMON ========== */
 .container {
-    max-width: 1200px;
+    max-width: 900px;
     margin: auto;
     padding: 0 20px;
 }
@@ -37,17 +36,16 @@ h2 {
     display: grid;
     gap: 30px;
 }
-
-/* ================= BUTTON ================= */
+/* ========== BUTTON ========== */
 .btn {
     display: inline-block;
     padding: 14px 36px;
     border-radius: 30px;
     background: #fa6b7e;
     color: #fff;
-    text-decoration: none;
-    font-weight: 600;
     font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
     transition: 0.3s ease;
 }
 
@@ -59,14 +57,13 @@ h2 {
     background: #fff;
     color: #764ba2;
 }
-
-/* ================= HERO ================= */
+/* ========== HERO ========== */
 .hero {
     background: linear-gradient(135deg, #4facfe, #00f2fe);
-    color: #fff;
     min-height: 90vh;
     display: flex;
     align-items: center;
+    color: #fff;
 }
 
 .hero-text {
@@ -87,29 +84,22 @@ h2 {
     margin-bottom: 36px;
     opacity: 0.95;
 }
-
-/* ================= CARD ================= */
-.card {
-    background: #ffffff;
-    padding: 32px;
-    border-radius: 18px;
-    text-align: center;
-}
-
-/* ================= PRICING ================= */
+/* ========== PRICING ========== */
 .pricing .grid {
     display: flex;
     justify-content: center;
+    font-size: 25px;
+    color:#222c80;
 }
 
 .price-card {
-    background: #faf4a8;
-    padding: 42px 36px;
-    border-radius: 50px;
-    border: 2px solid #131212;
-    text-align: center;
     max-width: 420px;
     width: 100%;
+    padding: 42px 36px;
+    border-radius: 50px;
+    background: #faf4a8;
+    border: 2px solid #111;
+    text-align: center;
     transition: 0.3s ease;
 }
 
@@ -120,7 +110,6 @@ h2 {
 
 .price-card h3 {
     font-size: 20px;
-    font-weight: 500;
     opacity: 0.7;
 }
 
@@ -131,12 +120,8 @@ h2 {
     margin: 18px 0;
 }
 
-.pricing p {
-    font-size: 30px;
-    color: #666;
-}
 
-/* ================= CTA ================= */
+/* ========== CTA ========== */
 .cta {
     background: linear-gradient(135deg, #667eea, #764ba2);
     color: #fff;
@@ -145,94 +130,18 @@ h2 {
 
 .cta h2 {
     font-size: 40px;
-    font-weight: 700;
     margin-bottom: 20px;
     color: #fff;
 }
 
 .cta p {
-    font-size: 18px;
+    font-size: 22px;
     max-width: 720px;
     margin: 0 auto 30px;
     opacity: 0.95;
 }
 
-/* ================= FOOTER ================= */
-footer {
-    background: #111;
-    color: #aaa;
-    text-align: center;
-    padding: 30px;
-    font-size: 14px;
-}
-
-/* ================= MOBILE ================= */
-@media (max-width: 991px) {
-
-    section {
-        padding: 70px 0;
-    }
-
-    h2 {
-        font-size: 28px;
-    }
-
-    .hero {
-        min-height: auto;
-        padding: 100px 0;
-    }
-
-    .hero-text h1 {
-        font-size: 34px;
-    }
-
-    .hero-text p {
-        font-size: 16px;
-    }
-
-    .price {
-        font-size: 32px;
-    }
-
-    .cta h2 {
-        font-size: 28px;
-    }
-
-    .cta p {
-        font-size: 15px;
-    }
-}
-/* ================= CONTACT CTA BUTTONS ================= */
-.contact-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 30px;
-}
-
-.btn-whatsapp {
-    background: #25D366;
-    color: #fff;
-}
-
-.btn-zalo {
-    background: #0068ff;
-    color: #fff;
-}
-
-.btn-whatsapp:hover,
-.btn-zalo:hover {
-    transform: translateY(-3px);
-    opacity: 0.95;
-}
-
-.contact-note {
-    margin-top: 16px;
-    font-size: 14px;
-    opacity: 0.75;
-}
-
-/* ================= CONTACT BUTTONS ================= */
+/* Contact buttons */
 .contact-buttons {
     display: flex;
     justify-content: center;
@@ -249,141 +158,42 @@ footer {
     border-radius: 40px;
     font-size: 22px;
     font-weight: 600;
-    text-decoration: none;
     color: #fff;
-    transition: all 0.3s ease;
+    text-decoration: none;
     box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+    transition: 0.3s ease;
 }
 
-/* Icon size */
 .contact-btn i {
     font-size: 26px;
 }
 
-/* WhatsApp */
 .contact-btn.whatsapp {
     background: #25D366;
 }
 
-.contact-btn.whatsapp:hover {
-    background: #1ebe5d;
-    transform: translateY(-4px);
-}
-
-/* Zalo */
 .contact-btn.zalo {
     background: #0068ff;
 }
 
-.contact-btn.zalo:hover {
-    background: #005ae0;
+.contact-btn:hover {
     transform: translateY(-4px);
 }
 
-/* ================= MOBILE ================= */
-@media (max-width: 991px) {
-    .contact-btn {
-        font-size: 16px;
-        padding: 12px 24px;
-    }
 
-    .contact-btn i {
-        font-size: 18px;
-    }
-}
-/* ================= CV vs PORTFOLIO – TYPO & COLOR ================= */
-
-.compare h2 {
-    font-size: 42px;
-    font-weight: 700;
-    color: #222;
-    letter-spacing: -0.5px;
-}
-
-/* Box */
-.compare-col {
-    background: #f7f9fc;
-    border: 2px solid #e6eaf0;
-}
-
-/* Title CV / Portfolio */
-.compare-col h3 {
-    font-size: 30px;
-    font-weight: 600;
-    color: #333;
-}
-
-/* List text */
-.compare-col li {
-    font-size: 22px;
-    color: #555;
-}
-
-/* Portfolio nổi bật */
-.compare-col.highlight {
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
-    border-color: transparent;
-}
-
-.compare-col.highlight h3 {
-    font-size: 32px;
-    font-weight: 700;
-    color: #fff;
-}
-
-.compare-col.highlight li {
-    font-size: 23px;
-    color: #ffffff;
-}
-
-/* Bottom note */
-.compare-note {
-    font-size: 26px;
-    font-weight: 700;
-    color: #222;
-    margin-top: 50px;
-}
-
-/* Highlight chữ quan trọng */
-.compare-note strong {
-    color: #4facfe;
-}
-
-/* ================= RESPONSIVE ================= */
-@media (max-width: 991px) {
-
-    .compare h2 {
-        font-size: 30px;
-    }
-
-    .compare-col h3 {
-        font-size: 22px;
-    }
-
-    .compare-col li {
-        font-size: 16px;
-    }
-
-    .compare-col.highlight h3 {
-        font-size: 24px;
-    }
-
-    .compare-note {
-        font-size: 18px;
-    }
-}
-/* ================= CV vs PORTFOLIO ================= */
+/* ========== CV vs PORTFOLIO ========== */
 .compare {
-        background: linear-gradient(
+    background: linear-gradient(
         100deg,
-        rgba(54, 153, 240, 0.08),
-        rgba(11, 77, 57, 0.12)
+        rgba(54,153,240,0.08),
+        rgba(11,77,57,0.12)
     );
 }
 
 .compare h2 {
-    font-size: 36px;
+    font-size: 40px;
     margin-bottom: 50px;
+    color:#764ba2
 }
 
 .compare-table {
@@ -398,7 +208,7 @@ footer {
     background: #f7f9fc;
     padding: 40px 36px;
     border-radius: 24px;
-    text-align: left;
+    
 }
 
 .compare-col h3 {
@@ -411,54 +221,45 @@ footer {
 }
 
 .compare-col li {
-    font-size: 18px;
+    font-size: 25px;
     margin-bottom: 14px;
-    line-height: 1.6;
 }
 
-/* Portfolio nổi bật hơn */
+/* Highlight */
 .compare-col.highlight {
     background: linear-gradient(135deg, #4facfe, #00f2fe);
     color: #fff;
 }
 
-.compare-col.highlight h3 {
-    color: #fff;
-}
-
-.compare-col.highlight li {
-    color: #fff;
-}
-
-/* Note */
 .compare-note {
     margin-top: 40px;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
-    color: #333;
 }
-
-/* ================= RESPONSIVE ================= */
+/* ========== RESPONSIVE ========== */
 @media (max-width: 991px) {
 
-    .compare-table {
-        grid-template-columns: 1fr;
-    }
+    section { padding: 70px 0; }
 
-    .compare h2 {
-        font-size: 28px;
-    }
+    h2 { font-size: 28px; }
 
-    .compare-col h3 {
-        font-size: 22px;
-    }
+    .hero { min-height: auto; padding: 100px 0; }
+    .hero-text h1 { font-size: 34px; }
+    .hero-text p { font-size: 16px; }
 
-    .compare-col li {
+    .price { font-size: 32px; }
+
+    .cta h2 { font-size: 28px; }
+    .cta p { font-size: 15px; }
+
+    .contact-btn {
         font-size: 16px;
+        padding: 12px 24px;
     }
 
-    .compare-note {
-        font-size: 18px;
-    }
+    .contact-btn i { font-size: 18px; }
+
+    .compare-table { grid-template-columns: 1fr; }
+    .compare-note { font-size: 18px; }
 }
